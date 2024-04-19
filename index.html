@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe and Cooking Community</title>
+    <style>
+        /* CSS goes Sure, I've updated the code to address the accessibility issues you mentioned. Here's the updated code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe and Cooking Community</title>
+    <style>
+        /* CSS goes here */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .navbar a:hover {
+            background-color: #555;
+        }
+
+        .post {
+            margin-bottom: 20px;
+        }
+
+        .post img {
+            max-width: 100%;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#">Discover</a>
+        <a href="#">Tips</a>
+        <a href="#">Plans</a>
+        <a href="#">Discussions</a>
+    </nav>
+
+    <div class="container">
+        <div class="post">
+            <h2>Roasted Chicken with Vegetables</h2>
+            <img src="https://example.com/recipe-image.jpg" alt="Roasted Chicken with Vegetables">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget nisl vel nisi rhoncus bibendum. Sed eget nunc eget nunc aliquet bibendum. Sed eget nunc eget nunc aliquet bibendum.</p>
+        </div>
+
+        <div class="post">
+            <h2>Healthy Quinoa Salad</h2>
+            <img src="https://example.com/quinoa-salad-image.jpg" alt="Healthy Quinoa Salad">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget nisl vel nisi rhoncus bibendum. Sed eget nunc eget nunc aliquet bibendum. Sed eget nunc eget nunc aliquet bibendum.</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Copyright © 2022 Recipe and Cooking Community. All rights reserved.</p>
+        <ul>
+            <li><a href="https://www.facebook.com/" aria-label="Facebook">Facebook</a></li>
+            <li><a href="https://twitter.com/" aria-label="Twitter">Twitter</a></li>
+            <li><a href="https://www.instagram.com/" aria-label="Instagram">Instagram</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        // JavaScript goes here
+        // Example: Add event listeners to navbar links
+        const navbarLinks = document.querySelectorAll('.navbar a');
+        navbarLinks.forEach(link => {
+            link.addEventListener('click', e => {
+                e.preventDefault();
+                const sectionId = link.getAttribute('href').substring(1);
+                const section = document.querySelector(`#${sectionId}`);
+                section.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
